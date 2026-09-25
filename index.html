@@ -317,7 +317,7 @@
   function draw(t) {
     cx.clearRect(0, 0, W, H);
     mx += (tx - mx) * .04; my += (ty - my) * .04;
-    const size = Math.min(W * .34, H * .30);
+    const size = Math.min(W * .40, H * .36);
     const cxp = W / 2, cyp = H * .44;
     const rot = t * 0.00012 + mx * .8, tilt = -.18 + my * .3;
     const cr = Math.cos(rot), sr = Math.sin(rot), ct = Math.cos(tilt), st = Math.sin(tilt);
