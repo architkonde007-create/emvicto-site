@@ -116,9 +116,9 @@
 
   /* ---------- STATEMENTS ---------- */
   .statements { padding-block: clamp(120px, 18vw, 260px); display: grid; gap: clamp(72px, 12vw, 160px); }
-  .stmt { display: grid; grid-template-columns: minmax(80px, 1fr) minmax(0, 3fr); gap: 24px; align-items: baseline; }
+  .stmt { display: grid; justify-items: center; text-align: center; }
   .stmt p {
-    margin: 0; font-weight: 300;
+    margin: 0 auto; font-weight: 300;
     font-size: clamp(28px, 4.4vw, 64px); line-height: 1.08; letter-spacing: -.02em;
     color: var(--mute); max-width: 18ch; text-wrap: balance;
     transition: color 1.2s var(--ease);
@@ -238,9 +238,9 @@
 
 <main>
   <section class="statements wrap" aria-label="Statements">
-    <div class="stmt"><span class="mono" aria-hidden="true"></span><p>Every athlete sweats.</p></div>
-    <div class="stmt"><span class="mono" aria-hidden="true"></span><p>Almost none of them know what they're losing.</p></div>
-    <div class="stmt"><span class="mono" aria-hidden="true"></span><p>Soon, you will.</p></div>
+    <div class="stmt"><p>Every athlete sweats.</p></div>
+    <div class="stmt"><p>Almost none of them know what they're losing.</p></div>
+    <div class="stmt"><p>Soon, you will.</p></div>
   </section>
 
 
