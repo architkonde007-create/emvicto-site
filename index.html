@@ -345,11 +345,6 @@
       cx.fillStyle = near > .05 ? `rgba(169,196,216,${Math.min(1, a)})` : `rgba(199,204,210,${a})`;
       cx.fillRect(px - rad / 2, py - rad / 2, rad, rad);
     }
-    // faint ground reflection line
-    const gy = cyp + size * 1.08;
-    const grd = cx.createLinearGradient(cxp - size, 0, cxp + size, 0);
-    grd.addColorStop(0, "rgba(199,204,210,0)"); grd.addColorStop(.5, "rgba(199,204,210,.18)"); grd.addColorStop(1, "rgba(199,204,210,0)");
-    cx.fillStyle = grd; cx.fillRect(cxp - size, gy, size * 2, 1);
   }
   function loop(t) { if (visible) draw(t); requestAnimationFrame(loop); }
   resize();
